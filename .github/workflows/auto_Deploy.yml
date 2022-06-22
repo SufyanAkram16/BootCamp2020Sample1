@@ -30,4 +30,4 @@ jobs:
       - name: Installing surge
         run: npm install --global surge
       - name: deploying using surge
-        run: surge ./ bootcamp2020sufi1.surge.sh/ --token "2884af9071592a4da90d1aee6f796df5"
+        run: surge ./ bootcamp2020sufi1.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
